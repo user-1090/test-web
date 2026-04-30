@@ -12,7 +12,7 @@
             flex-direction: column;
             justify-content: center;
 
-            min-height: 100vh;
+            min-height: 100dvh;
 
             background-color: black;
             color: white;
@@ -20,13 +20,13 @@
         }
         h1{
             margin: 0;
-            font-size: 55px;
+            font-size: clamp(36px, 8vw, 60px);
             color: gold;
         }
         h2{
             margin: 0;
             margin-top: 10px;
-            font-size: 30px;
+            font-size: clamp(24px, 5vw, 30px);
         }
         ul{
             list-style: none;
@@ -36,7 +36,7 @@
         li{
             background-color: #222;
             margin: 10px;
-            font-size: 20px;
+            font-size: clamp(16px, 4vw, 20px);
             padding: 5px;
             border-radius: 8px;
         }
