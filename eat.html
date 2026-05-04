@@ -11,7 +11,7 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            padding-top: 80px;
+            padding-top: clamp(60px, 20vw, 200px);
 
             min-height: 100vh;
 
@@ -22,13 +22,13 @@
         }
         h1{
             margin: 0;
-            font-size: clamp(36px, 6vw, 120px);
+            font-size: clamp(36px, 4vw, 120px);
             color: gold;
         }
         h2{
             margin: 0;
             margin-top: 10px;
-            font-size: clamp(24px, 3vw, 60px);
+            font-size: clamp(24px, 1.5vw, 60px);
         }
         ul{
             list-style: none;
@@ -41,12 +41,20 @@
         }
         .return{
             margin-top: 20px;
-            max-width: 150px;
+            max-width: 200px;
         }
         li{
+            line-height: clamp(20px, 2.5vw, 40px);
+            background-color: #222;
+            margin: 15px;
+            font-size: clamp(16px, 2vw, 35px);
+            padding: 5px;
+            border-radius: 8px;
+        }
+        .return2{
             background-color: #222;
             margin: 10px;
-            font-size: clamp(16px, 2.5vw, 40px);
+            font-size: clamp(10px, 1.5vw, 30px);
             padding: 5px;
             border-radius: 8px;
         }
@@ -66,7 +74,9 @@
             <li>包子</li>
         </ul>
         <ul class="return">
-            <li><a href="index.html">返回首页</a></li>
+            <li class="return2">
+                <a href="index.html">返回首页</a>
+            </li>
         </ul>
     </body>
 </html>
