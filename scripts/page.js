@@ -53,7 +53,7 @@ currentPage.list.forEach(item => {
 
     a.textContent = item.text;
 
-    a.href = `page.html?type=${item.link}`;
+    a.href = `result.html?item=${item.link}`;
 
     li.appendChild(a);
 
