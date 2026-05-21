@@ -4,6 +4,7 @@ const type = params.get("type");
 const pages = {
     eat: {
         title: "吃饭",
+        subtitle: "--吃饭是人生大事--",
         list: [
             {
                 text: "米饭",
@@ -22,6 +23,7 @@ const pages = {
 
     sleep: {
         title: "睡觉",
+        subtitle: "--睡觉是人生大事--",
         list: [
             {
                 text: "床单",
@@ -42,6 +44,7 @@ const pages = {
 const currentPage = pages[type];
 
 document.getElementById("title").textContent = currentPage.title;
+document.getElementById("subtitle").textContent = currentPage.subtitle;
 
 const list = document.getElementById("list");
 
